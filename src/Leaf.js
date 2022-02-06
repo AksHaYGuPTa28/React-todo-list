@@ -18,7 +18,7 @@ const cardSource = {
     const item = monitor.getItem();
     const dropResult = monitor.getDropResult();
     moveNode(item.id, dropResult.parent, dropResult.index);
-  }
+  },
 };
 
 /**
@@ -27,7 +27,7 @@ const cardSource = {
 function collect(connect, monitor) {
   return {
     connectDragSource: connect.dragSource(),
-    isDragging: monitor.isDragging()
+    isDragging: monitor.isDragging(),
   };
 }
 
@@ -38,7 +38,7 @@ class Leaf extends React.Component {
     return connectDragSource(
       <li className="d">
         <div>
-          {label} {isDragging && " (and I am being dragged now)"}
+          {label} {isDragging && " (I am dragging right now)"}
         </div>
         <Insert index={index + 1} parent={parent} />
       </li>

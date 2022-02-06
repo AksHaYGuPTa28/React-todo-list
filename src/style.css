@@ -1,3 +1,6 @@
+body {
+  background-color: #fafbfc;
+}
 ul {
   padding-left: 10px;
   list-style-type: none;
@@ -12,5 +15,7 @@ li.d {
 }
 
 li {
-  border: 1px dashed #e0e0e0;
+  background-color: #edecfb !important;
+  border: 1px solid black;
+  margin-bottom: 1rem;
 }

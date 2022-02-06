@@ -7,28 +7,28 @@ Store.init({
   state: {
     tree: {
       id: "root",
-      label: "root",
+      label: "Add Your Todos Here",
       items: [
-        { id: "l1", label: "node1" },
+        { id: "l1", label: "Todo1" },
         {
           id: "l2",
-          label: "node2",
+          label: "Todo2",
           items: [
-            { id: "l21", label: "node21" },
+            { id: "l21", label: "Todo2.1" },
             {
               id: "l22",
-              label: "node22",
+              label: "Todo2.2",
               items: [
-                { id: "l211", label: "node211" },
-                { id: "l212", label: "node212" },
-                { id: "l213", label: "node213" }
-              ]
-            }
-          ]
+                { id: "l211", label: "Todo2.2.1" },
+                { id: "l212", label: "Todo2.2.2" },
+                { id: "l213", label: "Todo2.2.3" },
+              ],
+            },
+          ],
         },
-        { id: "l3", label: "node3" }
-      ]
-    }
-  }
+        { id: "l3", label: "Todo3" },
+      ],
+    },
+  },
 });
 ReactDOM.render(<App />, document.getElementById("root"));
